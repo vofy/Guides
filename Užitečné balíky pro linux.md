@@ -39,7 +39,7 @@
 
 #### Souborové systémy
 * btrfs
-* freezfs (zfs)
+* openzfs (zfs)
 * ext4
 
 ##### Klienti souborového systému pro připojení přes síť
@@ -58,3 +58,5 @@
 #### Log management
 * zabbix - jednoduchá instalace i vytváření nových šablon
 
+#### Cloud
+* nextcloud
