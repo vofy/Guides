@@ -53,7 +53,7 @@
 * fstab
 
 #### Záloha
-* rsync - lze vytvořit i cron úlohu (pomocí příkazu crontab) a díky tomu pravidelně zálohovat soubory (doporučují zálohovat /etc, /home, /var či /srv, případně oddíly připojené v /mnt)
+* rsync - lze vytvořit i cron úlohu (pomocí příkazu crontab) nebo systemd/timer a díky tomu pravidelně zálohovat soubory (doporučují zálohovat /etc, /home, /var či /srv, případně oddíly připojené v /mnt)
 
 #### Log management
 * zabbix - jednoduchá instalace i vytváření nových šablon
