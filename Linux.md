@@ -1,0 +1,13 @@
+### Arch linux nvidia proprietární ovladače - nvidia
+```bash
+sudo yay -S nvidia lib32-nvidia-utils nvidia-utils nvidia-settings
+sudo bash -c "echo blacklist nouveau > /etc/modprobe.d/blacklist-nvidia-nouveau.conf"
+sudo bash -c "echo options nouveau modeset=0 >> /etc/modprobe.d/blacklist-nvidia-nouveau.conf"
+```
+
+| /etc/mkinitcpio.conf |
+| :-: |
+| `MODULES=(nvidia nvidia_modeset nvidia_uvm nvidia_drm)` |
+```bash
+sudo mkinitcpio -p linux
+```
