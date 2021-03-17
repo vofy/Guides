@@ -12,6 +12,7 @@ MODULES=(nvidia nvidia_modeset nvidia_uvm nvidia_drm)
 
 ```bash
 sudo mkinitcpio -p linux
+nvidia-xconfig
 ```
 
 /etc/X11/xorg.conf
