@@ -1,2 +1,2 @@
 ### Packages
-vim fish util-linux-user
+vim fish util-linux-user git
