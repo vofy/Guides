@@ -1,7 +1,9 @@
 ### Packages
 vim fish util-linux-user git htop ncdu cockpit screen
-
+```
 curl -L https://get.oh-my.fish | fish
+omf install bira
+```
 
 /etc/dnf/dnf.conf
 ```
