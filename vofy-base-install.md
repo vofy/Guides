@@ -1,5 +1,7 @@
 ### Packages
-vim fish util-linux-user git htop ncdu cockpit screen nginx
+```
+vim fish util-linux-user git htop ncdu cockpit screen nginx certbot
+```
 ```
 curl -L https://get.oh-my.fish | fish
 omf install bira
