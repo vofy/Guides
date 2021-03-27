@@ -1,6 +1,6 @@
 ### Packages
 ```
-vim fish util-linux-user git htop ncdu cockpit screen nginx certbot
+vim fish util-linux-user git htop ncdu cockpit screen nginx certbot docker
 ```
 ```
 curl -L https://get.oh-my.fish | fish
