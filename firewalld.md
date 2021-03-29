@@ -1,11 +1,16 @@
+### List all awailable zones
 `sudo firewall-cmd --get-zones`
 
+### Set public as default zone
 `sudo firewall-cmd --set-default public`
 
+### Get all active zones
 `sudo firewall-cmd --get-active-zones`
 
+### List all rules for active zone
 `sudo firewall-cmd --list-all`
 
+### Get list of all available services
 `sudo firewall-cmd --get-services | grep http`
 
 `sudo firewall-cmd --add-service ssh --permanent`
