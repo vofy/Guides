@@ -2,7 +2,7 @@
 CREATE LOGIN username WITH PASSWORD = ***;
 CREATE USER username FOR LOGIN username;
 
-DENY VIEW ANY DATABASE TO user;
+DENY VIEW ANY DATABASE TO username;
 
 CREATE DATABASE databasename;
 USE databasename;
