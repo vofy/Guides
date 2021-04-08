@@ -1,3 +1,3 @@
-`K` - Soft cut
-`Shift` + `K` - Hard cut
-`B` - Box-select
+* `K` - Soft cut
+* `Shift` + `K` - Hard cut
+* `B` - Box-select
