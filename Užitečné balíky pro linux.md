@@ -19,6 +19,7 @@
 * `vim`
 * `neovim`
 * `nano`
+* `visidata` - Vizualizace tabulek a grafů v cli
 
 #### Real Time Chat
 * `inspircd`
