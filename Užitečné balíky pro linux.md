@@ -44,6 +44,15 @@
 * `cockpit` - moderní webové gui pro management server, možnost instalace pluginů
 * `webmin` - postarší webové gui pro management server
 
+#### \*top
+* `htop` - monitorování procesů
+* `powertop` - power management
+* `iotop` - monitorování operací
+* `iftop` - monitorování síťového provozu
+* `ctop` - monitorování docker kontejnerů (grafická vizualizace)
+* `ngxtop` - monitorování nginx
+* `apachetop` - monitorování apache
+
 #### Souborové systémy
 * `btrfs`
 * `openzfs` (`zfs`)
@@ -73,6 +82,6 @@
 * `postfix`
 
 #### Process-managery
-* `systemd
+* `systemd`
 * `runit`
 * `openRC`
