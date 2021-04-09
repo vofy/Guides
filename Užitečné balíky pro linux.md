@@ -31,7 +31,9 @@
 
 ### Bezpečnost
 #### Firewall
-- `ufw` - Jednoduchá konfigurace firewallu, cli frontend pro nftables a iptables
+- `ufw` - Cli frontend pro nftables a iptables
+- `firewalld` - Cli frontend pro nftables a iptables
+
 #### Blokování IP na základě několika nepodařených pokusů
 - `fail2ban`
 
