@@ -15,6 +15,11 @@
 * `tmux`
 * `screen`
 
+#### Terminálové grafické editory
+* `vim`
+* `neovim`
+* `nano`
+
 #### Real Time Chat
 * `inspircd`
 * `matrix-synapse` - federovaná šifrovaná komunikace + doporučuji doinstalovat coturn pro videohovory
