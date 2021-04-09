@@ -8,8 +8,12 @@
 * (`apache`)
 
 #### HTTP proxy
-* `nginx
+* `nginx`
 * `apache traffic server`
+
+#### Terminal multiplexers
+* `tmux`
+* `screen`
 
 #### Real Time Chat
 * `inspircd`
