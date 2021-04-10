@@ -24,6 +24,7 @@ EndSection
 ```
 Pokud toto přeskočíme OpenGL bude využívat mesa driver
 
+### Více privátních ssh klíčů
 `.ssh/config`:
 ```
 Host myshortname realname.example.com
