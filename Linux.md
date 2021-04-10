@@ -24,3 +24,15 @@ EndSection
 ```
 Pokud toto přeskočíme OpenGL bude využívat mesa driver
 
+`.ssh/config`:
+```
+Host myshortname realname.example.com
+    HostName realname.example.com
+    IdentityFile ~/.ssh/realname_rsa # private key for realname
+    User remoteusername
+
+Host myother realname2.example.org
+    HostName realname2.example.org
+    IdentityFile ~/.ssh/realname2_rsa  # different private key for realname2
+    User remoteusername
+```
