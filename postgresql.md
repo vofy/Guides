@@ -1,3 +1,6 @@
+/var/lib/pgsql/data/pg_hba.conf
+scram-sha-256
+
 ```
 postgres@tyler:~$ psql 
 psql (10.5 (Ubuntu 10.5-1.pgdg16.04+1))
