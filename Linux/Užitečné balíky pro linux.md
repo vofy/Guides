@@ -84,6 +84,7 @@
 
 #### Cloud
 * `nextcloud`
+* `owncloud`
 
 #### Email
 * `sendmail`
