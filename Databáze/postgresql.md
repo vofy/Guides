@@ -1,3 +1,11 @@
+## Instalace
+fedora
+```
+dnf install postgresql-server
+postgresql-setup initdb
+systemctl enable --now posgresql.service
+```
+
 /var/lib/pgsql/data/pg_hba.conf
 scram-sha-256
 
