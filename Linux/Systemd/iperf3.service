@@ -1,0 +1,14 @@
+[Unit]
+Description=iPerf
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/iperf3 -s
+ExecStop=/usr/bin/killall -u iperf iperf3
+
+User=iperf
+Group=iperf
+
+[Install]
+WantedBy=multi-user.target
+Alias=iperf3.service
