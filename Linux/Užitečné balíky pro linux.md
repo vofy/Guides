@@ -94,3 +94,14 @@
 * `systemd`
 * `runit`
 * `openRC`
+
+#### Informace o systému
+* `hardinfo` - Informace o systému
+* `i7z` - Monitoring CPU
+
+#### RGB
+* `OpenRGB`
+
+#### Vodní chlazení
+* `liquidctl`
+* `gkraken` - NZXT Kraken GUI
