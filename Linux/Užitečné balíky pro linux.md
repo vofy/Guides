@@ -98,6 +98,7 @@
 #### Informace o systému
 * `hardinfo` - Informace o systému
 * `i7z` - Monitoring CPU
+* `smartmontools` - S.M.A.R.T (`sudo smartctl --all /dev/sda`)
 
 #### RGB
 * `OpenRGB`
