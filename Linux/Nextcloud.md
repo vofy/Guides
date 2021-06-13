@@ -1,13 +1,16 @@
-Login loop without any clue in access.log, error.log, nor nextcloud.log
 
-If you after fresh installation (Centos 7 with nginx) have problem with first login, you should as first check these files:
-
+## Řešení problémů
+Zkontrolujte logy:
+```bash
 tail /var/www/nextcloud/data/nextcloud.log
 tail /var/log/nginx/access.log
 tail /var/log/nginx/error.log
+```
 
+### Login loop without any clue in access.log, error.log, nor nextcloud.log
 If you just see some correct requests in access log, but no login happens, you check access rights for php session and wsdlcache directory. Try to check permissions and execute change if needed:
-```shell
+Jestliže se nelze přihlásit a v ani jednom z těchto logů není žádný problém, zkontrolujte vlastníka adresářů v následujících cestách `/var/lib/php/session/`, `/var/lib/php/wsdlcache/`, `/var/lib/php/opcache/`. Pokud soubory vlastní `apache`, proveďte následující příkazy:
+```bash
 chown nginx:nginx /var/lib/php/session/
 chown root:nginx /var/lib/php/wsdlcache/
 chown root:nginx /var/lib/php/opcache/
