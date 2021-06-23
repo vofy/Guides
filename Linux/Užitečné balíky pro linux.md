@@ -97,15 +97,16 @@
 
 #### Informace o systému
 * `hardinfo` - Informace o systému
-* `i7z` - Monitoring CPU
 * `smartmontools` - S.M.A.R.T (`sudo smartctl --all /dev/sda`)
 
 #### RGB
 * `OpenRGB`
 
 #### CPU
+* `i7z` - Monitoring CPU
 * `cpupower` (umožňuje nastavit statickou nebo adaptivní frekvenci - `sudo cpupower frequency-set --governor powersave`)
-* `undervolt` (umožňuje snížit napětí na CPU nebo limitovat teplotu - https://github.com/georgewhewell/undervolt)
+* `undervolt` (umožňuje snížit napětí nebo limitovat teplotu na CPU a GPU - https://github.com/georgewhewell/undervolt)
+* `stress` - Strestest CPU
 
 #### Vodní chlazení
 * `liquidctl`
