@@ -90,7 +90,7 @@
 * `sendmail`
 * `postfix`
 
-#### Process-managery
+#### Daemon managery
 * `systemd`
 * `runit`
 * `openRC`
@@ -104,7 +104,8 @@
 * `OpenRGB`
 
 #### CPU
-* `cpupower` (adaptivní frekvence - `sudo cpupower frequency-set --governor powersave`)
+* `cpupower` (umožňuje nastavit statickou nebo adaptivní frekvenci - `sudo cpupower frequency-set --governor powersave`)
+* `undervolt` (umožňuje snížit napětí na CPU nebo limitovat teplotu - https://github.com/georgewhewell/undervolt)
 
 #### Vodní chlazení
 * `liquidctl`
