@@ -103,6 +103,9 @@
 #### RGB
 * `OpenRGB`
 
+#### CPU
+* `cpupower` (adaptivní frekvence - `sudo cpupower frequency-set --governor powersave`)
+
 #### Vodní chlazení
 * `liquidctl`
 * `gkraken` - NZXT Kraken GUI
