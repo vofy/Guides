@@ -111,3 +111,6 @@
 #### Vodní chlazení
 * `liquidctl`
 * `gkraken` - NZXT Kraken GUI
+
+#### IdP
+* `ORY Hydra`, `Authelia`, `Keycloak`, `LemonLDAP::NG`, `Okta`
