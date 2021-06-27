@@ -1,0 +1,9 @@
+[Unit]
+Description=Renew TLS certificates using certbot renew
+
+[Timer]
+OnCalendar=monthly
+Persistent=true
+
+[Install]
+WantedBy=timers.target
