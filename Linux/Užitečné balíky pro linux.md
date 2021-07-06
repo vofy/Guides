@@ -38,6 +38,9 @@
 #### Blokování IP na základě několika nepodařených pokusů
 - `fail2ban`
 
+#### VPN server
+- `WireGuard`
+
 #### Kontrola verzí
 * `gitlab`
 * `gitea` - klon githubu
