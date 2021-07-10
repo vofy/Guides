@@ -17,7 +17,7 @@ chown root:nginx /var/lib/php/opcache/
 ```
 Ale práva se z nějakého důvodu mění zpět na apache (i když není nainstalovaný). Toto lze vyřešit přidáním adresářů pro nginx:
 ```bash
-mkdir -p /var/lib/php/nginx/session/ /var/lib/php/nginx/wsdlcache/ /var/lib/php/nginx/opcache/ && \
-chown -R root:nginx /var/lib/php/nginx/session/ /var/lib/php/nginx/wsdlcache/ /var/lib/php/nginx/opcache/ && \
-chmod -R 770 /var/lib/php/nginx/session/ /var/lib/php/nginx/wsdlcache/ /var/lib/php/nginx/opcache/
+sudo mkdir -p /var/lib/php/nginx/session/ /var/lib/php/nginx/wsdlcache/ /var/lib/php/nginx/opcache/ && \
+sudo chown -R root:nginx /var/lib/php/nginx/session/ /var/lib/php/nginx/wsdlcache/ /var/lib/php/nginx/opcache/ && \
+sudo chmod -R 770 /var/lib/php/nginx/session/ /var/lib/php/nginx/wsdlcache/ /var/lib/php/nginx/opcache/
 ```
