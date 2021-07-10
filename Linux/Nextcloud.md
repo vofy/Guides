@@ -11,7 +11,13 @@ tail /var/log/nginx/error.log
 If you just see some correct requests in access log, but no login happens, you check access rights for php session and wsdlcache directory. Try to check permissions and execute change if needed:
 Jestliže se nelze přihlásit a v ani jednom z těchto logů není žádný problém, zkontrolujte vlastníka adresářů v následujících cestách `/var/lib/php/session/`, `/var/lib/php/wsdlcache/`, `/var/lib/php/opcache/`. Pokud soubory vlastní `apache`, proveďte následující příkazy:
 ```bash
-chown nginx:nginx /var/lib/php/session/
+chown root:nginx /var/lib/php/session/
 chown root:nginx /var/lib/php/wsdlcache/
 chown root:nginx /var/lib/php/opcache/
+```
+Ale práva se z nějakého důvodu mění zpět na apache (i když není nainstalovaný). Toto lze vyřešit přidáním adresářů pro nginx:
+```bash
+mkdir -p /var/lib/php/nginx/session/ /var/lib/php/nginx/wsdlcache/ /var/lib/php/nginx/opcache/ && \
+chown -R root:nginx /var/lib/php/nginx/session/ /var/lib/php/nginx/wsdlcache/ /var/lib/php/nginx/opcache/ && \
+chmod -R 770 /var/lib/php/nginx/session/ /var/lib/php/nginx/wsdlcache/ /var/lib/php/nginx/opcache/
 ```
