@@ -36,6 +36,7 @@ CREATE TABLE book (
     ON UPDATE RESTRICT
 ) ENGINE = InnoDB;
 ```
+Více zde: https://mariadb.com/kb/en/foreign-keys/
 
 ## Vytvoření databáze a uživatele se všemi oprávněními k databázi
 ```mariadb
