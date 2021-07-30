@@ -81,6 +81,7 @@
 
 #### Záloha
 * `rsync` - lze vytvořit i cron úlohu (pomocí příkazu crontab) nebo systemd/timer a díky tomu pravidelně zálohovat soubory (doporučují zálohovat /etc, /home, /var či /srv, případně oddíly připojené v /mnt)
+* `bacula`
 
 #### Log management
 * `zabbix` - jednoduchá instalace i vytváření nových šablon
@@ -92,6 +93,7 @@
 #### Email
 * `sendmail`
 * `postfix`
+* `ClamAV` - antivirus
 
 #### Daemon managery
 * `systemd`
