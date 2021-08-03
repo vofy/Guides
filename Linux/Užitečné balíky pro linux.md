@@ -34,6 +34,8 @@
 #### Firewall
 - `ufw` - Cli frontend pro nftables a iptables
 - `firewalld` - Cli frontend pro nftables a iptables
+- `OpenSnitch` - Application Firewall
+- `Douane` - Application Firewall
 
 #### Blokování IP na základě několika nepodařených pokusů
 - `fail2ban`
