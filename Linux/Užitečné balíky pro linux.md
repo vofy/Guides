@@ -120,4 +120,4 @@
 * `gkraken` - NZXT Kraken GUI
 
 #### IdP
-* `ORY Hydra`, `Authelia`, `Keycloak`, `LemonLDAP::NG`
+* `Shibboleth`, `ORY Hydra`, `Authelia`, `Keycloak`, `LemonLDAP::NG`
