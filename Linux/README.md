@@ -20,7 +20,7 @@ sudo raspi-config
 sudo vim /home/pi/kiosk.sh
 ```
 
-```shell
+```bash
 #!/bin/bash
 xset s noblank
 xset s off
@@ -37,4 +37,31 @@ while true; do
    xdotool keydown ctrl+Tab; xdotool keyup ctrl+Tab;
    sleep 10
 done
+```
+
+```bash
+sudo nano /lib/systemd/system/kiosk.service
+```
+
+```bash
+[Unit]
+Description=Chromium Kiosk
+Wants=graphical.target
+After=graphical.target
+
+[Service]
+Environment=DISPLAY=:0.0
+Environment=XAUTHORITY=/home/pi/.Xauthority
+Type=simple
+ExecStart=/bin/bash /home/pi/kiosk.sh
+Restart=on-abort
+User=pi
+Group=pi
+
+[Install]
+WantedBy=graphical.target
+```
+
+```bash
+sudo systemctl enable --now kiosk.service
 ```
