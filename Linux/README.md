@@ -1,4 +1,12 @@
 ```bash
+sudo nano /boot/config.txt
+```
+
+```bash
+# Disable rainbow image at boot
+disable_splash=1
+```
+
 /usr/share/plymouth/themes/
 sudo plymouth-set-default-theme nazev -R
 sudo plymouth --show-splash
