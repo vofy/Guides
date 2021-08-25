@@ -7,6 +7,7 @@ sudo nano /boot/config.txt
 disable_splash=1
 ```
 
+```bash
 /usr/share/plymouth/themes/
 sudo plymouth-set-default-theme nazev -R
 sudo plymouth --show-splash
