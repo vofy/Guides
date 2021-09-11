@@ -1,9 +1,8 @@
-# Postup opravy VPN připojení přes L2TP/IPsec
+# VPN přes L2TP/IPsec
 
-### Info o systému
-- Operační systém: **Arch Linux**
-- Network manager: **NetworkManager**
-- L2TP: **networkmanager-l2tp + networkmanager-strongswan**/networkmanager-libreswan
+Balíky: **networkmanager networkmanager-l2tp networkmanager-strongswan**/networkmanager-libreswan
+
+## Troubleshooting
 
 Po vypnutí služby NetworkManager pomocí příkazu: 
 ```bash
