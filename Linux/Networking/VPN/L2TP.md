@@ -1,5 +1,10 @@
 # Postup opravy VPN připojení přes L2TP/IPsec
 
+### Info o systému
+Operační systém: Arch Linux
+Network manager: NetworkManager
+L2TP: networkmanager-l2tp
+
 Po vypnutí služby NetworkManager pomocí příkazu: 
 ```bash
 sudo systemctl stop NetworkManager.service
