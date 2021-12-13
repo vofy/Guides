@@ -116,7 +116,7 @@
 * `stress` - Strestest CPU
 
 #### RAM
-* `earlyoom`/`oomd` - Out of memory killer
+* `systemd-oomd`/`earlyoom`/`oomd` - Out of memory killer (zabrání zamrznutí systému při nedostatku paměti RAM)
 
 #### Vodní chlazení
 * `liquidctl`
