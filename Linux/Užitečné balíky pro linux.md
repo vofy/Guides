@@ -115,6 +115,9 @@
 * `undervolt` (umožňuje snížit napětí nebo limitovat teplotu na CPU a GPU - https://github.com/georgewhewell/undervolt)
 * `stress` - Strestest CPU
 
+#### RAM
+* `earlyoom`/`oomd` - Out of memory killer
+
 #### Vodní chlazení
 * `liquidctl`
 * `gkraken` - NZXT Kraken GUI
