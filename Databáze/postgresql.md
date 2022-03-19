@@ -24,7 +24,7 @@ postgres=# `show password_encryption;`
 ```
 
 ### 4. Nastavte šifrovací algoritmus
-postgres=# `SET password_encryption = 'scram-sha-256';`
+postgres=# `ALTER SYSTEM SET password_encryption = 'scram-sha-256';`
 ```
 SET
 ```
