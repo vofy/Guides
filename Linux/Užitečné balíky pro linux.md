@@ -15,6 +15,9 @@
 * `tmux`
 * `screen`
 
+#### Touchpad gestures
+* `touche touchegg`
+
 #### Terminálové grafické editory
 * `vim`
 * `neovim`
