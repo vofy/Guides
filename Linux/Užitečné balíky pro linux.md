@@ -18,6 +18,9 @@
 #### Touchpad gestures
 * `touche touchegg`
 
+#### Firmware kernel modules
+* `mkinitcpio-firmware`
+
 #### Terminálové grafické editory
 * `vim`
 * `neovim`
