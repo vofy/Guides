@@ -74,3 +74,6 @@ WantedBy=graphical.target
 ```bash
 sudo systemctl enable --now kiosk.service
 ```
+```
+export PATH="$HOME/.local/bin:$PATH"
+```
