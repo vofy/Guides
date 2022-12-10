@@ -2,6 +2,16 @@
 
 ## Commands
 
+### Open encrypted volume
+```
+sudo cryptsetup open /dev/<device> <mapped_name>
+```
+
+### Mount mapped (opened) volume
+```
+mount -o rw /dev/mapper/<mapped_name> /mnt
+```
+
 ### Dump LUKS header
 ```
 cryptsetup luksDump /dev/<device>
