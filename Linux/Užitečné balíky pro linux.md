@@ -1,3 +1,16 @@
+## Audio
+* `mixxx` - mix
+* `easyeffects` - equalizér, bass enhancer, balancer, ...
+* `helvum` - patchbay pro pipewire
+
+## RADIO / SDR
+* `gqrx`
+* `sdrpp` - SDR++
+
+## Elektro
+* `qucs` - simulátor obvodů
+* `kicad` - PCB design
+
 #### Hledání objemných souborů či adresářů
 * `ncdu` - cli
 * `baobab` - gui
@@ -10,6 +23,7 @@
 #### HTTP proxy
 * `nginx`
 * `apache traffic server`
+* `traefik`
 
 #### Terminal multiplexers
 * `tmux`
