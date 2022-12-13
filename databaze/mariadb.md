@@ -1,4 +1,7 @@
-## Instalace
+# MariaDB
+
+### Instalace
+
 ```bash
 sudo dnf install mariadb-server && \
 sudo mariadb-secure-installation
@@ -6,25 +9,30 @@ sudo mariadb-secure-installation
 mariadb -u root -p
 ```
 
-```mariadb
+```
 SET character_set_server = 'utf8mb4';
 SET collation_server = 'latin2_czech_cs';
 ```
 
-## Základní dotazy
-### Vypsání databází
+### Základní dotazy
+
+#### Vypsání databází
+
 `SHOW DATABASES;`
 
-### Vybrání databáze k dalším dotazům
+#### Vybrání databáze k dalším dotazům
+
 `USE databaze;`
 
-### Vytváření tabulek
+#### Vytváření tabulek
+
 ```
 CREATE TABLE author (
   id SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
   name VARCHAR(100) NOT NULL
 ) ENGINE = InnoDB;
 ```
+
 ```
 CREATE TABLE book (
   id MEDIUMINT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
@@ -36,10 +44,12 @@ CREATE TABLE book (
     ON UPDATE RESTRICT
 ) ENGINE = InnoDB;
 ```
+
 Více zde: https://mariadb.com/kb/en/foreign-keys/
 
-## Vytvoření databáze a uživatele se všemi oprávněními k databázi
-```mariadb
+### Vytvoření databáze a uživatele se všemi oprávněními k databázi
+
+```
 CREATE DATABASE aplikace DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 GRANT ALL PRIVILEGES ON aplikace.* TO 'aplikace'@'localhost' IDENTIFIED BY 'heslo';
 ```
