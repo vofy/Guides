@@ -1,4 +1,2 @@
-## Remember Personal Access Token
-```
-git config --global credential.helper store
-```
+# Guides
+Pretty usefull guides to do variety of things
