@@ -38,7 +38,7 @@ postgres=# `show password_encryption;`
 (1 row)
 ```
 
-### 6. Znovu nastavte heslo s využitím nově nastaveného algoritmu
+### 6. Znovu nastavte heslo s využitím nově nastavené šifry
 `\password webapp`
 ```
 Enter new password:
