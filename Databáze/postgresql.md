@@ -6,6 +6,13 @@ postgresql-setup initdb
 systemctl enable --now posgresql.service
 ```
 
+## Vytvoření jednoduché databáze s uživatelem
+(`USER <jmeno>` = `ROLE <jmeno> LOGIN`)
+```psql
+CREATE USER <jmeno> WITH PASSWORD '<heslo>';
+CREATE DATABASE <nazev> OWNER <jmeno>;
+```
+
 ## Nastavení šifrování na SHA-256
 
 ### 1. Nastavíme širfovací algoritmus pro autentifikaci
