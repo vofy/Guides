@@ -1,4 +1,4 @@
-### Důležitá úmístění
+## Důležitá úmístění
 ```
 /var/lib/docker/
 └── containers - Obsahuje konfiguraci kontejneru
@@ -11,22 +11,21 @@ Odstranění všech obrazů (images), které nejsou využívané existujcími ko
 ```bash
 docker image prune -a
 ```
+## Nejčastější příkazy
 
-### Docker run
+### Nový kontejner
 - Slouží k vytvoření instance (kontejneru) na základě obrazu (musí být vždy na konci příkazu)
 ```bash
-docker run bitwardenrs/server:latest
+docker run --name <název_kontejneru> -p <host_port>:<internal_port> - e '<JMÉNO PROMĚNNÉ>=<HODNOTA>' -v [<CESTA>:]/data/[:OPTIONS] --restart always bitwardenrs/server:latest
 ```
-#### Parametry
-##### Bindování portů
+
+### Výpis kontejnerů
+(-a vypíše všechny, defaultně vypíše pouze běžící)
 ```bash
-- p <PORT>:<PORT KONTEJNERU>
+docker container ls -a
 ```
-##### Nastavení proměnnou prostředí
+
+### Start/stop/odstranění kontejneru
 ```bash
-- e '<JMÉNO PROMĚNNÉ>=<HODNOTA>'
-```
-##### Sdílený souborový systém
-```bash
--v [<CESTA>:]/data/[:OPTIONS]
+docker container start/stop/rm <id/nazev>
 ```
