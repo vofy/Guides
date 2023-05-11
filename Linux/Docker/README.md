@@ -1,3 +1,12 @@
+### Důležitá úmístění
+```
+/var/lib/docker/
+├── containers - Obsahuje konfiguraci kontejneru
+    ├── <id_kontejneru>
+        ├── config.v2.json
+        ├── hostconfig.json
+```
+
 Odstranění všech obrazů (images), které nejsou využívané existujcími kontejnery
 ```bash
 docker image prune -a
