@@ -15,7 +15,7 @@
 * `ncdu` - cli
 * `baobab` - gui
 
-#### Webový server
+#### Webový serG
 * `pm2` - node.js
 * `nginx` - php, proxy, (RTMP, RTSP, HLS - je potřeba překompilovat s daným modulem)
 * (`apache`)
@@ -63,10 +63,15 @@
 #### VPN server
 - `WireGuard`
 
-#### Kontrola verzí
-* `gitlab`
-* `gitea` - klon githubu
+#### Version controll
+
+##### Server
+* `forgejo`
+* `gitea`
+
+##### Client
 * `git`
+* `gittyup` - Git GUI
 
 #### Password manager
 * `bitwarden_rs` - light-weight implementace v rustu a umožňuje využití mysql (mariadb) nebo postgresql
