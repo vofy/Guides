@@ -10,6 +10,7 @@
 ## Elektro
 * `qucs` - simulátor obvodů
 * `kicad` - PCB design
+* `ngspice`, `ltspice` - Simulace obvodů
 
 #### Hledání objemných souborů či adresářů
 * `ncdu` - cli
