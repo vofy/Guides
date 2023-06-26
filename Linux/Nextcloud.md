@@ -24,7 +24,7 @@ sudo mkdir -p /var/lib/php/nginx/session/ /var/lib/php/nginx/wsdlcache/ /var/lib
 sudo chown -R root:nginx /var/lib/php/nginx/session/ /var/lib/php/nginx/wsdlcache/ /var/lib/php/nginx/opcache/ && \
 sudo chmod -R 770 /var/lib/php/nginx/session/ /var/lib/php/nginx/wsdlcache/ /var/lib/php/nginx/opcache/
 ```
-A upravením konfigurace `/etc/php-fpm/www.conf`:
+A upravením konfigurace `/etc/php-fpm.d/www.conf`:
 ```
 php_value[session.save_path]    = /var/lib/php/nginx/session
 php_value[soap.wsdl_cache_dir]  = /var/lib/php/nginx/wsdlcache
