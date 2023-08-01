@@ -43,3 +43,11 @@ Více zde: https://mariadb.com/kb/en/foreign-keys/
 CREATE DATABASE aplikace DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 GRANT ALL PRIVILEGES ON aplikace.* TO 'aplikace'@'localhost' IDENTIFIED BY 'heslo';
 ```
+
+## Smazání všech tabulek s prefixem
+```
+SELECT CONCAT( 'DROP TABLE ', GROUP_CONCAT(table_name) , ';' ) 
+    AS statement FROM information_schema.tables 
+    WHERE table_name LIKE 'myprefix_%';
+```
+Poté odešleme dotaz vypsaný předchozím dotazem
