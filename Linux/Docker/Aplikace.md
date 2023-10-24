@@ -11,3 +11,9 @@ docker run -d -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=<SECRET>' -p 1433:1433 --restar
 ```bash
 docker run -d --name bitwarden --restart=unless-stopped -v /var/bitwarden/:/data/ -p 50000:80 bitwardenrs/server:latest
 ```
+
+## Penpot
+```bash
+wget https://raw.githubusercontent.com/penpot/penpot/main/docker/images/docker-compose.yaml
+sudo docker-compose -p penpot -f docker-compose.yaml up -d
+```
