@@ -1,4 +1,4 @@
-# Multiplexer 16-to-1
+## Multiplexer 16-to-1
 ```vhdl
 entity mux16_1 is
   Port ( a : in std_logic_vector(15 downto 0);
@@ -24,3 +24,24 @@ begin
   mux5: mux4_1 port map(a=>m,s=>s(3 downto 2),y=>y);
 end Behavioral;
 ```
+# Architecture
+## Process
+`<citlivostní seznam> - signály jenž se používají v podmínkách`
+`<návěští> - název procesu (NEPOVINNÉ)`
+
+```vhdl
+<návěští> : process (<citlivostní seznam>)
+begin
+<...>
+end process;
+```
+
+### Struktura `if-then-else`
+- Pozor: všechny 
+if <condition> then
+  <...>
+elsif <condition> then
+  <...>
+else
+  <...>
+end if;
