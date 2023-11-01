@@ -5,6 +5,7 @@
 ```vhdl
 <výstupní vektor> <= <vstupní signál nebo hodnota> when <podmínka 1> else
                      <vstupní signál nebo hodnota> when <podmínka 2> else
+                     <...>
                      (others => '0'); -- vynuluje vektor
 ```
 
