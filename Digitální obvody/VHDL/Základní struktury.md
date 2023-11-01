@@ -21,6 +21,8 @@ end process;
 
 ### Struktura `if-then-else`
 - Nelze použít mimo `process`
+
+```
 if <condition> then
   <...>
 elsif <condition> then
@@ -28,3 +30,4 @@ elsif <condition> then
 else
   <...>
 end if;
+```
