@@ -22,7 +22,7 @@ end process;
 ### Struktura `if-then-else`
 - Nelze použít mimo `process`
 
-```
+```vhdl
 if <condition> then
   <...>
 elsif <condition> then
