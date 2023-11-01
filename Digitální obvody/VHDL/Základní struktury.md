@@ -10,8 +10,8 @@
 ```
 
 ## Process
-`<citlivostní seznam> - signály jenž se používají v podmínkách`
-`<návěští> - název procesu (NEPOVINNÉ)`
+- `<citlivostní seznam>` - signály jenž se používají v podmínkách
+- `<návěští>` - název procesu (NEPOVINNÉ)
 
 ```vhdl
 <návěští> : process (<citlivostní seznam>)
