@@ -9,7 +9,7 @@ systemctl enable --now posgresql.service
 ## Vytvoření jednoduché databáze s uživatelem
 (`USER <jmeno>` = `ROLE <jmeno> LOGIN`)
 ```psql
-CREATE USER <jmeno> WITH PASSWORD '<heslo>';
+CREATE USER <jmeno> WITH ENCRYPTED PASSWORD '<heslo>';
 CREATE DATABASE <nazev> OWNER <jmeno>;
 ```
 
