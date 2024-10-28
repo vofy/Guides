@@ -20,7 +20,7 @@ curl \
  -d "client_secret=<client_secret>" \
  -d "username=<user_username>" \
  -d "password=<user_password>" \
- <base_url>/realms/test/protocol/openid-connect/token | jq .
+ <base_url>/realms/<realm>/protocol/openid-connect/token | jq .
 ```
 #### Analyze token
 [JSON Web Tokens](https://jwt.io/)
