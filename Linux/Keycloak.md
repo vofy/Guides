@@ -12,6 +12,7 @@
 ## Diagnostics
 ### Analyze JWT returned for client
 #### Get token
+##### Use curl
 ```sh
 curl \
  -d "grant_type=password" \
@@ -22,5 +23,8 @@ curl \
  -d "password=<user_password>" \
  <base_url>/realms/<realm>/protocol/openid-connect/token | jq .
 ```
+##### Use Postman GUI
+![Postman](https://github.com/user-attachments/assets/7298d446-dd76-49fa-a766-4c7af612e60a)
+
 #### Analyze token
 [JSON Web Tokens](https://jwt.io/)
