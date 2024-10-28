@@ -28,3 +28,6 @@ curl \
 
 #### Analyze token
 [JSON Web Tokens](https://jwt.io/)
+
+## Useful links
+https://medium.com/@iamestelleyu/using-keycloak-in-grafana-228010ef3735
