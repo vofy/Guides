@@ -32,7 +32,7 @@
 `sudo firewall-cmd --reload`
 
 
-Configure the service:
+### Configure custom service:
 
 ```
 firewall-cmd --permanent --service=myservice --set-description=description
@@ -53,28 +53,3 @@ This adds a new service using all the settings from the file including the servi
 `firewall-cmd --permanent --new-service-from-file=myservice.xml --name=mynewservice`
 
 This adds a new service using the service settings from the file. The new service will have the name mynewservice.
-With firewall-offline-cmd
-
-To add a new and empty service, use the --new-service option:
-
-`firewall-offline-cmd --new-service=myservice`
-
-Configure the service:
-
-`firewall-offline-cmd --service=myservice --set-description=description`
-`firewall-offline-cmd --service=myservice --set-short=description`
-`firewall-offline-cmd --service=myservice --add-port=portid[-portid]/protocol`
-`firewall-offline-cmd --service=myservice --add-protocol=protocol`
-`firewall-offline-cmd --service=myservice --add-source-port=portid[-portid]/protocol`
-`firewall-offline-cmd --service=myservice --add-module=module`
-`firewall-offline-cmd --service=myservice --set-destination=ipv:address[/mask]`
-
-Alternatively, you can add a new service using an existing file:
-
-`firewall-offline-cmd --new-service-from-file=myservice.xml`
-
-This adds a new service using all settings from the file including the service name.
-
-`firewall-offline-cmd --new-service-from-file=myservice.xml --name=mynewservice`
-
-This adds a new service using the service settings from the file. But the new service will have the name mynewservice.
