@@ -25,7 +25,7 @@
 ### Add port to private zone
 `sudo firewall-cmd --add-port 1622/tcp --permanent`
 
-### Remove port to private zone
+### Remove port from private zone
 `sudo firewall-cmd --remove-port 1622/tcp --permanent`
 
 ### Reload firewall
