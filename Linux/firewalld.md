@@ -13,22 +13,24 @@
 ### Get list of all available services
 `sudo firewall-cmd --get-services | grep http`
 
+### Add service to default zone
 `sudo firewall-cmd --add-service ssh --permanent`
 
+### Add service to private zone
+`sudo firewall-cmd --add-service ssh --zone=private --permanent`
+
+### Remove service from default zone
 `sudo firewall-cmd --remove-service ssh --permanent`
 
+### Add port to private zone
 `sudo firewall-cmd --add-port 1622/tcp --permanent`
 
+### Remove port to private zone
 `sudo firewall-cmd --remove-port 1622/tcp --permanent`
 
+### Reload firewall
 `sudo firewall-cmd --reload`
 
-
-With firewall-cmd
-
-To add a new and empty service, use the --new-service altogether with the --permanent option:
-
-`firewall-cmd --permanent --new-service=myservice`
 
 Configure the service:
 
