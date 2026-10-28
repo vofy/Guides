@@ -1,0 +1,32 @@
+# NVIDIA GTX 1080 Ti on Fedora 44
+
+**Driver:** proprietary **580xx legacy** from RPM Fusion (`akmod-nvidia-580xx`).
+NVIDIA 590+ (Fedora 44 default is 595) dropped Pascal; 580 is the final branch for GTX 10-series.
+
+## Install
+
+```bash
+# 1. Full RPM Fusion repos (legacy drivers are NOT in the default "NVIDIA driver" repo)
+sudo dnf install \
+  https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm \
+  https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+
+# 2. Remove current driver if present, install 580xx
+sudo dnf remove xorg-x11-drv-nvidia akmod-nvidia
+sudo dnf install akmod-nvidia-580xx xorg-x11-drv-nvidia-580xx xorg-x11-drv-nvidia-580xx-cuda
+
+# 3. Wait for module build, then reboot
+modinfo -F version nvidia
+sudo reboot
+```
+
+## Notes
+
+- **Don't** use `akmod-nvidia` (595, no Pascal) or `akmod-nvidia-open` (no Pascal).
+- **Secure Boot:** enroll akmods key, then confirm in MOK screen on reboot:
+  ```bash
+  sudo kmodgenca -a
+  sudo mokutil --import /etc/pki/akmods/certs/public_key.der
+  ```
+- **Build logs:** `/var/cache/akmods/nvidia-580xx/.last.log`, `/var/log/akmods/akmods.log`
+- Nouveau works but is much slower on Pascal (can't reclock).
