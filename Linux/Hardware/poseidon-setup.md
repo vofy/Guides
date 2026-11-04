@@ -95,6 +95,28 @@ sudo grep -E 'PreserveVideoMemory|TemporaryFilePath' /proc/driver/nvidia/params
 
 ---
 
+## 4. Logitech MX Keys screenshot key
+
+**Symptom:** the screenshot key does nothing (MX Keys on a Logi Bolt receiver, Fedora 45, GNOME on Wayland).
+
+**Cause:** the key doesn't send `Print`. It sends `Super+Shift+S` (the Windows snipping shortcut), which GNOME doesn't bind by default.
+
+```bash
+gsettings set org.gnome.shell.keybindings show-screenshot-ui "['Print', '<Shift><Super>s']"
+```
+
+**Verify:**
+```bash
+gsettings get org.gnome.shell.keybindings show-screenshot-ui
+# ['Print', '<Shift><Super>s']
+```
+
+Press the key: the GNOME screenshot UI opens. No logout needed.
+
+**Undo:** `gsettings reset org.gnome.shell.keybindings show-screenshot-ui`
+
+---
+
 ## Troubleshooting
 
 ```bash
